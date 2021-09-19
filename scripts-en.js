@@ -41,13 +41,13 @@ function toggleStartPause(){
 
 function start(){
     isRunning = true;
-    controlButton.innerText = 'Pausar';
+    controlButton.innerText = 'Pause';
     timer = setInterval(updateTimer, 1000);
 }
 
 function pause(){
     isRunning = false;
-    controlButton.innerText = 'Iniciar';
+    controlButton.innerText = 'Start';
     clearInterval(timer);
 }
 
@@ -108,9 +108,9 @@ function drawTime(){
 }
 
 function drawTurn(){
-    let timeMode = 'Trabalho';
+    let timeMode = 'Work';
     if(isBreakTime){
-        timeMode = currentTurn < totalTurns ? 'Descanso' : 'Descanso Longo';
+        timeMode = currentTurn < totalTurns ? 'Break' : 'Long Break';
     }
     timeModeElement.innerText = timeMode;
     turnElement.innerText = `${currentTurn} / ${totalTurns}`;

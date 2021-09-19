@@ -22,8 +22,39 @@ button {
     cursor: pointer;
 }
 
+#back-top {
+    position: fixed;
+    padding: 16px;
+    bottom: 75px;
+    right: 75px;
+    background-color: rgba(71, 49, 180, 0.25);
+}
+
 button:hover {
     opacity: .8;
+}
+
+#back-top:hover {
+    opacity: 0.5;
+    
+}
+
+#language {
+    position: fixed;
+    padding: 16px;
+    top: 75px;
+    left: 75px;
+    background-color: rgba(71, 49, 180, 0.25);
+    color: white;
+}
+
+#language a {
+    color: white;
+    text-decoration: none;
+}
+
+#language:hover{
+    opacity: 0.8;
 }
 
 .main, .content {
@@ -40,6 +71,8 @@ button:hover {
     padding: 270px;
     color: whitesmoke;
 }
+
+
 
 footer {
     margin: 16px;
